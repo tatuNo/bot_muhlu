@@ -75,6 +75,7 @@ const groupTeam = (team) => {
 					'matches': _.sumBy(objs, item => Number(item.stats.Matches))
 				}
 			})
+		.orderBy('matches', 'desc')
 		.value()
 }
 
